@@ -1,0 +1,10 @@
+[
+  {
+    "outputFileName": "Scripts/RulerBundle.js",
+    "inputFiles": [
+      "Scripts/Ruler.js",
+      "Scripts/RulerTooltip.js",
+      "Scripts/Demo.js"
+    ]
+  }
+]
