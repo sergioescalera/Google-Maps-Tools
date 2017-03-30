@@ -32,3 +32,4 @@ var RulerDemo;
         ruler = new Google.Maps.Ruler(map);
     }
 })(RulerDemo || (RulerDemo = {}));
+//# sourceMappingURL=Demo.js.map

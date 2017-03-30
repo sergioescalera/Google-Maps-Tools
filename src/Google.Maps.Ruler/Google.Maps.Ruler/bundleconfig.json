@@ -5,6 +5,7 @@
       "Scripts/Ruler.js",
       "Scripts/RulerTooltip.js",
       "Scripts/Demo.js"
-    ]
+    ],
+    "sourceMap": false
   }
 ]
