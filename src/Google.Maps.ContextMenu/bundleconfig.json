@@ -1,0 +1,10 @@
+[
+  {
+    "outputFileName": "Scripts/ContextMenuBundle.js",
+    "inputFiles": [
+      "Scripts/ContextMenu.js",
+      "Scripts/Demo.js"
+    ],
+    "sourceMap": false
+  }
+]

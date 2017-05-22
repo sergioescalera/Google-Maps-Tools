@@ -41,4 +41,3 @@ var Google;
         Maps.RulerTooltip = RulerTooltip;
     })(Maps = Google.Maps || (Google.Maps = {}));
 })(Google || (Google = {}));
-//# sourceMappingURL=RulerTooltip.js.map

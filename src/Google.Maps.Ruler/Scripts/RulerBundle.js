@@ -119,7 +119,7 @@ var Google;
         Maps.Ruler = Ruler;
     })(Maps = Google.Maps || (Google.Maps = {}));
 })(Google || (Google = {}));
-//# sourceMappingURL=Ruler.js.map
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -163,7 +163,7 @@ var Google;
         Maps.RulerTooltip = RulerTooltip;
     })(Maps = Google.Maps || (Google.Maps = {}));
 })(Google || (Google = {}));
-//# sourceMappingURL=RulerTooltip.js.map
+
 var RulerDemo;
 (function (RulerDemo) {
     var latitude = 38;
@@ -198,4 +198,3 @@ var RulerDemo;
         ruler = new Google.Maps.Ruler(map);
     }
 })(RulerDemo || (RulerDemo = {}));
-//# sourceMappingURL=Demo.js.map

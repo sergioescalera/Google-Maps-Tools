@@ -119,4 +119,3 @@ var Google;
         Maps.Ruler = Ruler;
     })(Maps = Google.Maps || (Google.Maps = {}));
 })(Google || (Google = {}));
-//# sourceMappingURL=Ruler.js.map

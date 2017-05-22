@@ -1,17 +1,16 @@
-var RulerDemo;
-(function (RulerDemo) {
+var ContextMenuDemo;
+(function (ContextMenuDemo) {
     var latitude = 38;
     var longitude = -100;
     var zoom = 8;
     var map;
+    var menu;
     var center;
     var canvas;
-    var ruler;
     function init() {
         initMap();
-        initRuler();
     }
-    RulerDemo.init = init;
+    ContextMenuDemo.init = init;
     function initMap() {
         center = new google.maps.LatLng(latitude, longitude);
         canvas = document.getElementById("map-canvas");
@@ -27,8 +26,11 @@ var RulerDemo;
             draggingCursor: "move",
             mapTypeId: google.maps.MapTypeId.ROADMAP
         });
+        menu = new Google.Maps.ContextMenu(map);
+        menu.addItem("Say Hi").click(function () { return toastr.info("Hi"); });
+        menu.addItem("Say Hey").click(function () { return toastr.info("Hey"); });
+        ;
+        menu.addItem("Say Hello").click(function () { return toastr.info("Hello"); });
+        ;
     }
-    function initRuler() {
-        ruler = new Google.Maps.Ruler(map);
-    }
-})(RulerDemo || (RulerDemo = {}));
+})(ContextMenuDemo || (ContextMenuDemo = {}));
