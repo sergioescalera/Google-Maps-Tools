@@ -8,15 +8,16 @@ var Google;
             contextMenuItem: "<li></li>"
         };
         var ContextMenu = (function () {
-            function ContextMenu(map, items, position) {
-                if (items === void 0) { items = []; }
-                if (position === void 0) { position = google.maps.ControlPosition.LEFT_TOP; }
+            function ContextMenu(map, options) {
+                options = options || {};
+                options.items = options.items || [];
+                options.position = options.position || google.maps.ControlPosition.LEFT_TOP;
                 this._container = jQuery(templates.contextMenu);
                 this._button = jQuery(this._container.find("img"));
                 this._button.click(this.toggle.bind(this));
                 this._itemContainer = this._container.find(".context-menu-items").hide();
-                this.addItems(items || []);
-                map.controls[position].push(this._container.get(0));
+                this.addItems(options.items);
+                map.controls[options.position].push(this._container.get(0));
             }
             ContextMenu.prototype.toggle = function () {
                 this._itemContainer.toggle();

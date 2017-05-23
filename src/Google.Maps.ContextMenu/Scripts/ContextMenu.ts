@@ -11,24 +11,30 @@
         contextMenuItem: `<li></li>`
     };
 
+    export interface ContextMenuOptions {
+        items?: string[];
+        position?: google.maps.ControlPosition;
+    }
+
     export class ContextMenu {
 
         _container: JQuery;
         _button: JQuery;
         _itemContainer: JQuery;
 
-        constructor(
-            map: google.maps.Map,
-            items: string[] = [],
-            position: google.maps.ControlPosition = google.maps.ControlPosition.LEFT_TOP) {
-            
+        constructor(map: google.maps.Map, options?: ContextMenuOptions) {
+
+            options = options || {};
+            options.items = options.items || [];
+            options.position = options.position || google.maps.ControlPosition.LEFT_TOP;
+
             this._container = jQuery(templates.contextMenu);
             this._button = jQuery(this._container.find("img"));
             this._button.click(this.toggle.bind(this));
             this._itemContainer = this._container.find(".context-menu-items").hide();
-            this.addItems(items || []);
+            this.addItems(options.items);
 
-            map.controls[position].push(this._container.get(0));
+            map.controls[options.position].push(this._container.get(0));
         }
 
         private toggle(): void {
