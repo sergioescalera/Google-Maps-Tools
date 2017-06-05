@@ -1,0 +1,36 @@
+﻿html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+#map-canvas {
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.options {
+  margin: 10px 0;
+}
+.options i {
+  vertical-align: middle;
+}
+.options .checkbox {
+  display: inline-block;
+  padding: 3px 20px;
+  vertical-align: middle;
+}
+.options .checkbox input,
+.options .checkbox span,
+.options .checkbox label {
+  display: inline-block;
+  vertical-align: middle;
+}

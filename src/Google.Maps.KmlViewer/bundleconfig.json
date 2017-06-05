@@ -1,0 +1,9 @@
+[
+  {
+    "outputFileName": "Scripts/KmlViewerBundle.js",
+    "inputFiles": [
+      "Scripts/Demo.js",
+      "Scripts/KmlViewer.js"
+    ]
+  }
+]
